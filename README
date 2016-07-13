@@ -2,11 +2,11 @@ We test the squid proxy, with following machines: 1 server (apache), 1 proxy, 1 
 
 We do two tests:
  1: http proxy
- 2: https prox
+ 2: https proxy
 
 Additionaly, we check that the log on proxy side contains no error and no fatal warning.
 
-We forbid any direct communicatioàn between client and server with iptables.
+We forbid any direct communication between client and server with iptables.
 
 ## TODO:
 - test https without --no-check-certificate option
