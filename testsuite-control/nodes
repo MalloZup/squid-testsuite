@@ -1,0 +1,21 @@
+node     server
+
+repo     ${CHANNEL_SLENKINS_SERVER}
+repo     ${CHANNEL_UPDATES_SERVER}
+install  apache2
+
+install  ${PROJECT_NAME}-tests-server
+
+node     proxy
+
+repo     ${CHANNEL_SLENKINS_PROXY}
+repo     ${CHANNEL_UPDATES_PROXY}
+
+install  squid
+install  ${PROJECT_NAME}-tests-proxy
+
+node     client
+repo     ${CHANNEL_SLENKINS_CLIENT}
+repo     ${CHANNEL_UPDATES_CLIENT}
+install  wget
+install  ${PROJECT_NAME}-tests-client

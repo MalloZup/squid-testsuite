@@ -1,0 +1,18 @@
+We test the squid proxy, with following machines: 1 server (apache), 1 proxy, 1 client.
+
+We do two tests:
+ 1: http proxy
+ 2: https prox
+
+Additionaly, we check that the log on proxy side contains no error and no fatal warning.
+
+We forbid any direct communicatioàn between client and server with iptables.
+
+## TODO:
+- test https without --no-check-certificate option
+- test authentication on proxy
+- test page filtering with squidguard
+  http://dsi.ut-capitole.fr/blacklists/index_en.php
+- other functionality
+- run or integrate testsuite upstream from squid project here (?)
+  http://wiki.squid-cache.org/DeveloperResources

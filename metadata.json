@@ -1,0 +1,16 @@
+{
+  "name": "tests-squid",
+  "summary": "Test suite for squid",
+  "description": "SLEnkins test suite for squid proxy.",
+  "status": "ready",
+  "maintainer": ["Dario Maiocchi <dmaiocchi@suse.com>"],
+  "rpm": ["tests-squid", "tests-squid-tests-client", "tests-squid-tests-control", "tests-squid-tests-proxy", "tests-squid-tests-server"],
+  "arch": ["noarch"],
+  "product": "squid",
+  "fate": null,
+  "bnc": ["bsc#970293"],
+  "updated_at": "2016-04-13 10:26:00 UTC",
+  "tags": ["slenkins"],
+  "nodes": ["client", "proxy", "server"],
+  "incompatible": []
+}
